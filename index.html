@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <title>Zaķu Gardumi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, main, footer {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #2c5e3b;
+      font-weight: bold;
+    }
+    h1, h2 {
+      color: #336633;
+    }
+    .gallery img {
+      width: 200px;
+      margin: 10px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8em;
+      color: #666;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form input[type="submit"] {
+      background-color: #2c5e3b;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button {
+      background-color: #2c5e3b;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zaķu Gardumi</h1>
+    <p>Veselīgas un dabīgas barības pikas jūsu trušiem</p>
+  </header>
+
+  <nav>
+    <a href="#sakums">Sākumlapa</a>
+    <a href="#produkti">Produkti</a>
+    <a href="#galerija">Galerija</a>
+    <a href="#autors">Par mums</a>
+    <a href="#kontakti">Kontakti</a>
+  </nav>
+
+  <main>
+    <section id="sakums">
+      <h2>Sākumlapa</h2>
+      <p>Mēs piedāvājam vitamīniem bagātus barības pušķus, kas ir lielisks papildinājums jūsu truša uzturam. Vasarā tie ir svaigi, bet ziemā - kaltēti.</p>
+    </section>
+
+    <section id="produkti">
+      <h2>Produkti</h2>
+      <ul>
+        <li>Svaigi pieneņu pušķi</li>
+        <li>Kaltēta lucerna</li>
+        <li>Burkānu kāti un lapas</li>
+        <li>Ābolu šķēlītes (bez sēklām)</li>
+        <li>Grauzdēti graudu maisījumi</li>
+      </ul>
+      <a href="#kontakti"><button>Pasūtīt tagad</button></a>
+    </section>
+
+    <section id="galerija">
+      <h2>Galerija</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/200x150?text=Trusis1" alt="Trusis ar pieneņu pušķi">
+        <img src="https://via.placeholder.com/200x150?text=Trusis2" alt="Trusis ēd lucernu">
+        <img src="https://via.placeholder.com/200x150?text=Trusis3" alt="Laimīgs trusis ar gardumiem">
+      </div>
+    </section>
+
+    <section id="autors">
+      <h2>Par mums</h2>
+      <p>“Zaķu Gardumi” ir ģimenes uzņēmums, kas dibināts ar mīlestību pret dzīvniekiem. Mūsu mērķis ir nodrošināt trušiem veselīgu, dabīgu un garšīgu barību.</p>
+    </section>
+
+    <section id="kontakti">
+      <h2>Kontakti</h2>
+      <p>Epasts: info@zakugardumi.lv</p>
+      <p>Telefons: +371 12345678</p>
+
+      <form action="mailto:info@zakugardumi.lv" method="post" enctype="text/plain">
+        <label for="vards">Vārds:</label><br>
+        <input type="text" id="vards" name="vards" required><br>
+
+        <label for="epasts">Epasts:</label><br>
+        <input type="email" id="epasts" name="epasts" required><br>
+
+        <label for="zina">Ziņa:</label><br>
+        <textarea id="zina" name="zina" rows="5" required></textarea><br>
+
+        <input type="submit" value="Sūtīt ziņu">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zaķu Gardumi. Visas tiesības aizsargātas.</p>
+  </footer>
+</body>
+</html>
